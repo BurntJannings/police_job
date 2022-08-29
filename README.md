@@ -10,3 +10,5 @@ Add as many jobs to job list as you want
 If you want to access the Gun cabinets it is currently done with bt-target and focusing on them
 
 https://github.com/BurntJannings/bt-target
+
+[![Github All Releases](https://img.shields.io/github/downloads/BurntJannings/police_job/total.svg)]()
