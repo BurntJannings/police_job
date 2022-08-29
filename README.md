@@ -11,4 +11,8 @@ If you want to access the Gun cabinets it is currently done with bt-target and f
 
 https://github.com/BurntJannings/bt-target
 
+      TriggerServerEvent("lawmen:goondutysv",GetPlayers())
+If using Syn Society to go onduty, you will need to add this event to the On Duty Command, openregionalselectmenu, and just under the if IsControlJustReleased(0, Config.OpenMenu) then lines in the client file
+      
+
 [![Github All Releases](https://img.shields.io/github/downloads/BurntJannings/police_job/total.svg)]()
