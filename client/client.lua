@@ -180,6 +180,11 @@ function GetPlayers()
     return players
 end
 
+RegisterCommand("goonduty", function()
+    TriggerEvent('lawmen:goonduty')
+end)
+
+
 RegisterCommand("menu", function()
     if policeOnDuty and not isDead then
         OpenMarshalMenu()
