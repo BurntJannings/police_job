@@ -180,6 +180,10 @@ function GetPlayers()
     return players
 end
 
+RegisterCommand("gooffduty", function()
+    TriggerEvent('lawmen:gooffduty')
+end)
+
 RegisterCommand("goonduty", function()
     TriggerEvent('lawmen:goonduty')
 end)
