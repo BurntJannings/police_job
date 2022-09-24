@@ -371,7 +371,7 @@ AddEventHandler("lawmen:UnjailPlayer", function()
             Citizen.Wait(600)
 	    ExecuteCommand("rc")
 	    DoScreenFadeIn(500)
-            Citizen.Wait(600
+            Citizen.Wait(600)
     TriggerEvent("vorp:TipBottom", "~pa~Police~q~: You have been released from prison. Now straighten up and fly right!", 5000)
     jailed = false
     jail_time = 0
