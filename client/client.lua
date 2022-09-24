@@ -351,8 +351,10 @@ AddEventHandler("police_job:wear_prison", function()
     Citizen.InvokeNative(0xDF631E4BCE1B1FC4, ped, 0xAF14310B, true, true, true)
     Citizen.InvokeNative(0xDF631E4BCE1B1FC4, ped, 0x72E6EF74, true, true, true)
     Citizen.InvokeNative(0xDF631E4BCE1B1FC4, ped, 0xEABE0032, true, true, true)
+    Citizen.InvokeNative(0xDF631E4BCE1B1FC4, ped, 0x2026C46D, true, true, true)
+    
     if IsPedMale(ped) then
-        Citizen.InvokeNative(0xD3A7B003ED343FD9, ped, 0xF3E09573, true, true, true)
+        Citizen.InvokeNative(0xD3A7B003ED343FD9, ped, 0x5BA76CCF, true, true, true)
         Citizen.InvokeNative(0xD3A7B003ED343FD9, ped, 0x216612F0, true, true, true)
         Citizen.InvokeNative(0xD3A7B003ED343FD9, ped, 0x1CCEE58D, true, true, true)
     else
@@ -367,11 +369,7 @@ RegisterNetEvent("lawmen:UnjailPlayer")
 AddEventHandler("lawmen:UnjailPlayer", function()
     local local_ped = PlayerPedId()
     local local_player = PlayerId()
-            DoScreenFadeOut(500)
-            Citizen.Wait(600)
 	    ExecuteCommand("rc")
-	    DoScreenFadeIn(500)
-            Citizen.Wait(600)
     TriggerEvent("vorp:TipBottom", "~pa~Police~q~: You have been released from prison. Now straighten up and fly right!", 5000)
     jailed = false
     jail_time = 0
